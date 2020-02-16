@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://codingdojo.org/kata/RomanNumerals/ -->
+<html><head lang="en-us"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+  <link href="./Roman Numerals - Coding Dojo_files/css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./Roman Numerals - Coding Dojo_files/codingdojo.css">
+  <title>Roman Numerals - Coding Dojo</title>
+  <meta name="generator" content="Hugo 0.37.1">
+
+  
+  <link rel="canonical" href="http://codingdojo.org/kata/RomanNumerals/">
+  
+
+  <meta property="og:url" content="//codingdojo.org/kata/RomanNumerals/">
+  <meta property="og:title" content="Coding Dojo">
+  
+  <meta name="apple-mobile-web-app-title" content="Coding Dojo">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://codingdojo.org/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="http://codingdojo.org/images/favicon.ico">
+</head>
+
+<body>
+  <header class="main-header">
+    <h1><a href="http://codingdojo.org/">Coding Dojo</a></h1>
+    <nav class="main-header__nav main-nav">
+      <ul class="main-nav__list"><li class="main-nav__item">
+          <a href="http://codingdojo.org/dojo/" class="main-nav__link">Dojos</a>
+        </li><li class="main-nav__item main-nav__item--active">
+          <a href="http://codingdojo.org/kata/" class="main-nav__link">Kata</a>
+        </li><li class="main-nav__item">
+          <a href="http://codingdojo.org/people/" class="main-nav__link">Peoples</a>
+        </li><li class="main-nav__item">
+          <a href="http://codingdojo.org/record/" class="main-nav__link">Records</a>
+        </li><li class="main-nav__item">
+          <a href="http://codingdojo.org/solution/" class="main-nav__link">Solutions</a>
+        </li>
+      </ul>
+    </nav>
+</header>
+
+<div class="top-right-corner ribbon gradient">
+  <div class="seams">
+  <a class="" href="https://github.com/codingdojo-org" title="View on GitHub">
+    Edit on Github
+  </a>
+    </div>
+</div>
+
+  <article class="page">
+    <div class="content">
+      <h1>
+        Roman Numerals
+        
+      </h1>
+
+      
+
+<h1 id="about-this-kata">About this Kata</h1>
+
+<p>I wasn’t there, but I believe this Kata was performed at XP2001 by Kent Beck. Here is <a href="http://www.infoq.com/presentations/TDD-Managers-Nicolette-Scotland">[a video of Karl Scotland doing this Kata in Excel at agile 2008]</a>
+Here is <a href="http://vimeo.com/15104374">[a video of JonJagger doing this Kata in Ruby using CyberDojo]</a></p>
+
+<p>Difficulty - Easy.</p>
+
+<h1 id="problem-description">Problem Description</h1>
+
+<p>The Romans were a clever bunch. They conquered most of Europe and ruled it for hundreds of years. They invented concrete and straight roads and even bikinis <a href="http://sights.seindal.dk/sight/456_Roman_Villa_of_Piazza_Armerina.html">[1]</a>.
+One thing they never discovered though was the number zero. This made writing and dating extensive histories of their exploits slightly more challenging, but the system of numbers they came up with is still in use today. For example the BBC uses Roman numerals to date their programmes.</p>
+
+<p>The Romans wrote numbers using letters : <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code>, <code>M</code>. (notice these letters have lots of straight lines and are hence easy to hack into stone tablets)</p>
+
+<h2 id="part-i">Part I</h2>
+
+<p>The Kata says you should write a function to convert from normal numbers to Roman Numerals: eg</p>
+
+<pre><code>     1 --&gt; I
+     10 --&gt; X
+     7 --&gt; VII
+</code></pre>
+
+<p>etc.</p>
+
+<p>For a full description of how it works, take a look at <a href="http://www.novaroma.org/via_romana/numbers.html">[this useful reference website]</a> : which includes an implementation of the Kata in javascript.</p>
+
+<p>There is no need to be able to convert numbers larger than about 3000.  (The Romans themselves didn’t tend to go any higher)</p>
+
+<h2 id="part-ii">Part II</h2>
+
+<p>Write a function to convert in the other direction, ie numeral to digit</p>
+
+<h1 id="clues">Clues</h1>
+
+<ul>
+<li>Can you make the code really beautiful and highly readable?<br></li>
+<li>does it help to break out lots of small named functions from the main function, or is it better to keep it all in one function?</li>
+<li>if you don’t know an algorithm to do this already, can you derive one using strict TDD?</li>
+<li>does the order you take the tests in affect the final design of your algorithm?</li>
+<li>Would it be better to work out an algorithm first before starting with TDD?</li>
+<li>if you do know an algorithm already, can you implement it using strict TDD?</li>
+<li>Can you think of another algorithm?</li>
+<li>what are the best data structures for storing all the numeral letters? (<code>I</code>, <code>V</code>, <code>D</code>, <code>M</code> etc)</li>
+<li>can you define the test cases in a csv file and use FIT, or generate test cases in xUnit?</li>
+<li>what is the best way to verify your tests are correct?</li>
+</ul>
+
+<h1 id="comments-from-those-who-are-working-on-this-kata">Comments from those who are working on this Kata</h1>
+
+<p>We tackled this Kata at this <a href="http://codingdojo.org/record/GothPy081007">GothPy081007</a> meeting – <a href="http://codingdojo.org/people/EmilyBache">EmilyBache</a></p>
+
+<p><a href="http://blog.crisp.se/hansbrattberg/2010/08/10/1281424295367.html">[Here’s a Scala solution]</a>, – HansBrattberg</p>
+
+<p>Found a <a href="http://github.com/hibri/f_sharp_roman_numeral_converter/blob/master/Dojo.FSharp/Roman.fs">[F# solution]</a> and a <a href="http://github.com/ruby-fatecsp/dojos/blob/8cb15023eec6d4a5c9cdcf1723adff1ed5864a03/roman_to_numerals/lib/roman_to_num.rb">[tidy Ruby one]</a> at github.</p>
+
+<p><a href="https://github.com/froderik/roman_numeral_katas">[Implementation]</a> in
+ruby, java and clojure along with acceptance tests written in ruby and
+interacting with the command line. Would be nice with some additional
+languages. - <a href="http://codingdojo.org/people/FredrikRubensson">FredrikRubensson</a></p>
+
+<p><a href="https://github.com/machi1990/num_to_rom">[Here’s a JavaScript solution]</a> at Github</p>
+
+      <div class="article-footer">
+        <a class="button" href="https://github.com/codingdojo-org/codingdojo.org/edit/master/content/kata/RomanNumerals.md">Edit</a>
+      </div>
+    </div>
+  </article>
+  <footer class="bottom">
+  <nav>
+    <ul>
+
+      
+      <li><a href="http://codingdojo.org/fr/">fr</a></li>
+      
+      <li><a href="http://codingdojo.org/">en</a></li>
+      
+      <li><a href="http://codingdojo.org/pt/">pt</a></li>
+      
+    </ul>
+  </nav>
+</footer>
+
+
+
+</body></html>
