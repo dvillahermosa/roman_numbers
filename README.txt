@@ -10,7 +10,7 @@ zero for the roll.
 For example, if a player rolls 5,6,5,5,2 and scores the
 dice in the fives category they would score 15 (three fives).
 
-Your task is to score a GIVEN roll in a GIVEN category.
+Your task is to score a GIVEN roll in a GIVEN category..
 You do NOT have to program the random dice rolling.
 You do NOT have to program re-rolls (as in the real game).
 You do NOT play by letting the computer choose the highest
