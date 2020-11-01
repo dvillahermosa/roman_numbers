@@ -1,0 +1,2 @@
+mvn deploy:deploy-file -DgroupId=org.atp  -DartifactId=roman_numbers  -Dversion=0.0.1  -Dpackaging=jar -Dfile=target/roman_numbers-0.0.1.jar -DgeneratePom=true  -DrepositoryId=nexus-local -Durl=http://localhost:8081/repository/roman_numbers/
+REM curl --fail -u admin:admin --upload-file target/roman_numbers-0.0.1.jar 'http://my-nexus-server.com:8081/repository/my-raw-repo/'
