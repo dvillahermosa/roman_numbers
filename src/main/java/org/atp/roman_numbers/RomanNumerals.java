@@ -21,7 +21,7 @@ public class RomanNumerals extends Roman {
 	}
 
 	public int convert(String romanNumber) throws NotValidSymbolException {
-		if(!IsValidFormat(romanNumber)) {
+		if(!isValidFormat(romanNumber)) {
 			throw new NotValidSymbolException("The roman number " + romanNumber + " contains not valid symbols");
 		}
 		
@@ -36,7 +36,7 @@ public class RomanNumerals extends Roman {
 		return output;
 	}
 
-	private boolean IsValidFormat(String romanNumber) {
+	private boolean isValidFormat(String romanNumber) {
 		String result = romanNumber;
 		for(String key: symbolsValues.keySet()) {
 			if(!key.equals(EMPTY)) {				
